@@ -1,0 +1,116 @@
+@import '../../utilsForScss/colors.scss';
+@import '../../utilsForScss/mixins.scss';
+
+.phone-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+
+  @include onTablet {
+    gap: 20px;
+    flex-direction: row;
+  }
+
+  @include onTablet {
+    gap: 32px;
+    flex-direction: row;
+  }
+
+  &__main {
+    height: 288px;
+    width: 288px;
+    object-fit: contain;
+    order: -1;
+
+    @include onTablet {
+      height: 272px;
+      width: 272px;
+
+      flex-direction: row;
+      align-self: start;
+
+      order: 0;
+    }
+
+    @include onDesktop {
+      height: 442px;
+      width: 442px;
+
+      align-self: center;
+    }
+  }
+
+  &__img {
+    max-height: 274px;
+    object-fit: contain;
+    background-size: contain;
+
+    & > .carousel__image {
+      height: 400px;
+      width: 400px;
+      background-size: contain;
+    }
+
+    @include onDesktop {
+      max-height: 442px;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    gap: 8px;
+    width: max-content;
+
+    @include onTablet {
+      flex-direction: column;
+      align-self: start;
+    }
+
+    @include onDesktop {
+      gap: 16px;
+    }
+  }
+
+  &__dot {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #3B3E4A;
+
+    @include onTablet {
+      height: 35px;
+      width: 35px;
+    }
+
+    @include onDesktop {
+      height: 80px;
+      width: 80px;
+    }
+
+    &:hover, &:active {
+      border-color: #C4C4C4;
+    }
+  }
+
+  &__item {
+    display: block;
+    max-height: 30px;
+    max-width: 30px;
+    object-fit: contain;
+
+    @include onDesktop {
+      max-height: 66px;
+      max-width: 66px;
+    }
+  }
+}
+
+.carousel__master-spinner-container {
+  background-color: #2f3545;
+}

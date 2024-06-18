@@ -1,0 +1,138 @@
+@import "./AboutPhone/AboutPhone.scss";
+@import "./TechSpecs/TechSpecs.scss";
+@import "../PhoneImageInfo/PhoneImageInfo.scss";
+@import "../CardsSlider/CardsSlider.scss";
+@import '../../utilsForScss/mixins.scss';
+
+@font-face {
+  font-family: 'MontRegular';
+  src: url('../../fonts/Mont-Regular.eot');
+  src: local('Mont Regular'), local('Mont-Regular'),
+     url('../../fonts/Mont-Regular.eot?#iefix') format('embedded-opentype'),
+     url('../../fonts/Mont-Regular.woff2') format('woff2'),
+     url('../../fonts/Mont-Regular.woff') format('woff'),
+     url('../../fonts/Mont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.OnePhonePage {
+  background-color: #0F1121;
+  overflow-x: hidden;
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  &__loader {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+
+    font-family: 'Mont', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 31px;
+
+    color: #F1F2F9;
+
+    @include onTablet {
+      margin-bottom: 32px;
+
+      font-size: 32px;
+      line-height: 41px;
+    }
+  }
+
+  &__phone-choose {
+    display: flex;
+    flex-direction: column;
+    @include onTablet {
+      flex-direction: row;
+      flex: 0 0 50%;
+      gap: 32px;
+    }
+
+    &__container {
+      margin-bottom: 56px;
+
+      @include onTablet {
+        margin-bottom: 64px;
+      }
+
+      @include onDesktop {
+        margin-bottom: 80px;
+      }
+    }
+
+    &__slider {
+      flex: 0 0 50%;
+      margin-bottom: 40px;
+
+      @include onTablet {
+        margin-bottom: 0;
+      }
+    }
+
+    &__info {
+      flex: 1;
+    }
+  }
+
+  &__history {
+    display: grid;
+    grid-column: 1 / 4;
+    padding: 26px 0 24px;
+
+    @include onTablet {
+      padding: 26px 0 40px;
+    }
+    @include onDesktop {
+      padding: 26px 0 40px;
+    }
+  }
+
+  &__phone-description {
+    @include onDesktop {
+      display: flex;
+      gap: 32px;
+    }
+
+    &__about {
+      flex-basis: 50%;
+      margin-bottom: 56px;
+
+      @include onTablet {
+        margin-bottom: 64px;
+      }
+
+      @include onDesktop {
+        margin-bottom: 0;
+      }
+    }
+
+    &__specs {
+      width: 100%;
+      flex-basis: 50%;
+    }
+  }
+
+  &__slider {
+    flex: 0;
+    margin: 0 -16px 0;
+    @include onTablet {
+      margin: 0 -24px 0;
+    }
+
+    @include onDesktop {
+      margin: 0 -32px 0;
+    }
+  }
+}
+

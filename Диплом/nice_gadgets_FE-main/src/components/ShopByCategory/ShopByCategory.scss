@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Mont', sans-serif;
+  src: url('../..//fonts/Mont-SemiBold.eot');
+  src: local('../../fonts/Mont SemiBold'), local('Mont-SemiBold'),
+     url('../../fonts/Mont-SemiBold.eot?#iefix') format('embedded-opentype'),
+     url('../../fonts/Mont-SemiBold.woff2') format('woff2'),
+     url('../../fonts/Mont-SemiBold.woff') format('woff'),
+     url('../../fonts/Mont-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.shopByCategory {
+  &__title {
+    margin-bottom: 24px;
+
+    font-family: 'Mont';
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 41px;
+
+    letter-spacing: -0.01em;
+
+    color: #F1F2F9;
+
+    @media (min-width: 640px) {
+      text-align: left;
+    }
+  }
+}
+
+.section {
+  column-gap: 20px;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 640px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: unset;
+  }
+
+  &__title {
+    margin-top: 24px;
+    margin-bottom: 0px;
+
+    font-family: 'Mont';
+    font-weight: 700;
+    text-align: left;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #F1F2F9;
+  }
+
+  &__numberOfModels {
+    margin-top: 4px;
+    margin-bottom: 32px;
+    font-family: 'Mont';
+    font-weight: 600;
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #75767F;
+
+    @media (min-width: 640px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    max-width: 256px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    @media (min-width: 640px) {
+      max-width: 100%;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@mixin onTablet {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  //if you need this to work on 290px phones just change it on 290px
+  @media (min-width: 320px) {
+    @content;
+  }
+}

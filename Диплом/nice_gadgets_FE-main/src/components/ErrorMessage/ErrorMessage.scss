@@ -1,0 +1,20 @@
+.error-box {
+  background-color: #161827;
+  color: #ffffff;
+  padding: 15px 25px;
+  margin: 0 auto;
+  border: 1px #9f3311 solid;
+
+  @include onTablet {
+    width: max-content;
+  }
+
+  @include onDesktop {
+    width: max-content;
+  }
+
+  &__err {
+    color: #9f3311;
+    margin-right: 15px;
+  }
+}

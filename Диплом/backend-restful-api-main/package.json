@@ -1,0 +1,46 @@
+{
+  "name": "nice_gadgets_backend-restful-api",
+  "version": "0.2.1",
+  "description": "RESTful API",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "st": "nodemon src/server.js",
+    "build": "./node_modules/.bin/netlify-lambda build src",
+    "start": "./node_modules/.bin/netlify-lambda serve src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fe-aug22-team-Harold/nice_gadgets_backend-RESTful-API.git"
+  },
+  "keywords": [
+    "JS",
+    "Express",
+    "NodeJS",
+    "SQL",
+    "REST",
+    "API"
+  ],
+  "author": "team-Harold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fe-aug22-team-Harold/nice_gadgets_backend-RESTful-API/issues"
+  },
+  "homepage": "https://github.com/fe-aug22-team-Harold/nice_gadgets_backend-RESTful-API#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "netlify-cli": "^12.2.7",
+    "netlify-lambda": "^2.0.15",
+    "nodemailer": "^6.8.0",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.26.0",
+    "serverless-http": "^3.1.0",
+    "uuid": "^9.0.0"
+  }
+}

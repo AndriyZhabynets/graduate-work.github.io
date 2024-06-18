@@ -1,0 +1,36 @@
+@import './reset.scss';
+@import './utilsForScss/mixins.scss';
+@import './utilsForScss/colors.scss';
+@import './grid.scss';
+@import './components/HomePage/page.scss';
+@import './components/HomePage/HomePage.scss';
+@import './components/HomePage/WelcomeBanner/WelcomeBanner.scss';
+@import './components/ProductCard/ProductCard.scss';
+@import './components/Cart/Cart.scss';
+@import './components/PhonesPage/PhonesPage.scss';
+@import './components/FilterInputs/FilterInputs.scss';
+@import './components/PhonesPage/PaginationButtons/PaginationButtons.scss';
+@import './components/FavoritesPage/FavoritesPage.scss';
+@import './components/OnePhonePage/OnePhonePage.scss';
+@import './components/HistoryBlock/HistoryBlock.scss';
+@import './components/RegisterForm/RegisterForm.scss';
+@import './components/LogInForm/LogInForm.scss';
+@import './components/ActivationPage/ActivationPage.scss';
+@import './components/ErrorMessage/ErrorMessage.scss';
+
+@font-face {
+  font-family: 'Mont';
+  src: url('./fonts/Mont-SemiBold.eot');
+  src: local('./fonts/Mont SemiBold'), local('Mont-SemiBold'),
+      url('./fonts/Mont-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/Mont-SemiBold.woff2') format('woff2'),
+      url('./fonts/Mont-SemiBold.woff') format('woff'),
+      url('./fonts/Mont-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.App {
+  //text-align: center;
+  min-height: 90vh;
+}
