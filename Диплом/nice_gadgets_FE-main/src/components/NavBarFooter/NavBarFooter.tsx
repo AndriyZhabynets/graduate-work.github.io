@@ -7,17 +7,17 @@ export const NavBarFooter: React.FC = () => {
     <div className="nav nav--footer">
       <div className="nav__bar nav__bar--footer">
         <a
-          href="https://github.com/fe-aug22-team-Harold"
+          href=""
           target="_blank"
           rel="noreferrer"
           className="nav__link nav__link--footer"
         >
           Github
         </a>
-        <Link to="/about-project" className="nav__link nav__link--footer">
+        <Link to="/about-projectt" className="nav__link nav__link--footer">
           About
         </Link>
-        <Link to="/rights" className="nav__link nav__link--footer">
+        <Link to="/rightss" className="nav__link nav__link--footer">
           Rights
         </Link>
       </div>
